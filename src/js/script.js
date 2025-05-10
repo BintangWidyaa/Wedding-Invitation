@@ -279,7 +279,7 @@ $(() => {
 
   const songs = [
     {
-      path: "assets/1.mp3",
+      path: "assets/2.mp3",
       displayName: "You're Still The One",
       cover: "images/IMG_2997.JPG",
       artist: "Shania Twain",
