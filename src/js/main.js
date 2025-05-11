@@ -2,11 +2,11 @@
 import "../css/fonts.css";
 import "../css/main.css";
 
-// fontawesome → pakai CSS, bukan JS!
+// pakai alias custom @fortawesome/css
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // swiper
-import "swiper/swiper.min.css"; // lebih stabil daripada "swiper/css"
+import "swiper/swiper.min.css";
 
 // script.js
 import "./script.js";
