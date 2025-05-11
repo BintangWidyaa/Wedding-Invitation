@@ -3,7 +3,7 @@ import "../css/fonts.css";
 import "../css/main.css";
 
 // fontawesome
-import "@fortawesome/fontawesome-free/js/all.js";
+import "@fortawesome/fontawesome-free/css/all.min.css"; // ✅
 
 // swiper
 import "swiper/css";
