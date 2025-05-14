@@ -40,17 +40,19 @@ $(() => {
     }
   });
 
-  const path = window.location.pathname.split("/").filter(Boolean);
-  const nameSlug = path[path.length - 1];
+  // Ambil parameter "to" dari URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const recipient = urlParams.get('to');
 
-  // Ubah slug jadi nama biasa (capitalize tiap kata)
-  // const name = nameSlug
-  //   .split("-")
-  //   .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-  //   .join(" ");
+  // Masukkan ke elemen dengan ID recipient-name
+  if (recipient) {
+    // Ubah jadi format kapital di awal (opsional)
+    const formattedName = decodeURIComponent(recipient)
+      .replace(/\+/g, ' ')
+      .replace(/\b\w/g, c => c.toUpperCase());
 
-  // Tampilkan ke elemen yang sesuai
-  // document.getElementById("recipient-name").textContent = name;
+    document.getElementById('recipient-name').textContent = formattedName;
+  }
 
   /**
    * Menu active state
